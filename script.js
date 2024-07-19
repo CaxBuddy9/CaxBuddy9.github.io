@@ -12,3 +12,11 @@ function closeModal() {
     var modal = document.getElementById('nftModal');
     modal.style.display = "none";
 }
+
+// Fermer la modal lorsque l'utilisateur clique en dehors de l'image
+window.onclick = function(event) {
+    var modal = document.getElementById('nftModal');
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
