@@ -1,5 +1,146 @@
-/* Existing styles... */
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
+body {
+    background-color: #001f3f; /* Bleu nuit */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-background.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+#about, #nft, #contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2, #nft h2, #contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p, #contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+.nft-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nft-item {
+    background: #004080;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.nft-item:hover {
+    transform: scale(1.05);
+}
+
+.nft-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px 30px;
+    border: none;
+    background: #0074D9;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056A3;
+}
+
+footer {
+    background: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Modal Styles */
 .modal {
     display: none; 
     position: fixed; 
