@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -28,68 +28,21 @@ header h1 {
     font-size: 2.5em;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-#hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-background.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-.hero-content p {
-    font-size: 1.5em;
-}
-
-#about, #nft, #contact {
+#gallery {
     padding: 50px 0;
-    text-align: center;
-}
-
-#about h2, #nft h2, #contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-#about p, #contact p {
-    font-size: 1.2em;
-    line-height: 1.8;
 }
 
 .nft-gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
 }
 
 .nft-item {
     background: #004080;
     border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     width: 200px;
     transition: transform 0.3s;
@@ -104,26 +57,18 @@ nav ul li a {
     border-radius: 10px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 15px 30px;
+button {
+    padding: 10px 20px;
     border: none;
     background: #0074D9;
     color: #ffffff;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 1.2em;
-    transition: background 0.3s;
+    font-size: 1em;
+    margin: 20px 0;
 }
 
-form button:hover {
+button:hover {
     background: #0056A3;
 }
 
@@ -141,16 +86,16 @@ footer p {
 
 /* Modal Styles */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    padding-top: 60px; 
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.9); 
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
 }
 
 .modal-content {
