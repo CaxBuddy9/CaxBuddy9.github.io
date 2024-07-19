@@ -39,13 +39,13 @@
             <div class="container">
                 <h2>Nos NFT</h2>
                 <div class="nft-gallery">
-                    <div class="nft-item">
+                    <div class="nft-item" onclick="openModal('nft1.jpg', 'Description de NFT 1')">
                         <img src="nft1.jpg" alt="NFT 1">
                         <p>Description de NFT 1</p>
                     </div>
-                    <div class="nft-item">
-                        <img src="nft2.png" alt="NFT 2">
-                        <p>coucou barley 2</p>
+                    <div class="nft-item" onclick="openModal('nft2.jpg', 'Description de NFT 2')">
+                        <img src="nft2.jpg" alt="NFT 2">
+                        <p>Description de NFT 2</p>
                     </div>
                     <!-- Ajoutez plus d'éléments NFT ici -->
                 </div>
@@ -70,5 +70,14 @@
             <p>&copy; 2024 Galerie NFT - DRC20. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="nftModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
